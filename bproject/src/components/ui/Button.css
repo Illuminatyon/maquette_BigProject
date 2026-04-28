@@ -1,0 +1,90 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.08);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+.btn:hover::before { opacity: 1; }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:disabled:active { transform: none; }
+
+/* ── Sizes ── */
+.btn--sm  { font-size: 0.75rem; padding: 7px 16px; }
+.btn--md  { font-size: 0.875rem; padding: 11px 22px; }
+.btn--lg  { font-size: 1rem; padding: 14px 32px; }
+.btn--full { width: 100%; }
+
+/* ── Variants ── */
+.btn--primary {
+  background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-blue-mid) 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(26, 127, 212, 0.35);
+}
+.btn--primary:hover:not(:disabled) {
+  box-shadow: var(--shadow-blue);
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+.btn--secondary:hover:not(:disabled) { border-color: var(--color-blue); color: var(--color-blue-light); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-muted);
+}
+.btn--ghost:hover:not(:disabled) { color: var(--color-text); background: var(--color-surface); }
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-blue-light);
+  border: 1.5px solid var(--color-blue);
+}
+.btn--outline:hover:not(:disabled) {
+  background: var(--color-blue-glow);
+  border-color: var(--color-blue-light);
+}
+
+.btn--danger {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+/* ── Icons ── */
+.btn__icon { display: flex; align-items: center; flex-shrink: 0; }
+.btn__icon svg, .btn__icon img { width: 16px; height: 16px; }
+.btn--lg .btn__icon svg { width: 18px; height: 18px; }
+
+/* ── Spinner ── */
+.btn__spinner {
+  width: 15px; height: 15px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}

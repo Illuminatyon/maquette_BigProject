@@ -1,0 +1,25 @@
+.category-page__header {
+  margin-bottom: var(--space-6);
+}
+
+.category-page__subs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.category-page__sub-link {
+  padding: 6px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+.category-page__sub-link:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue-light);
+  background: var(--color-blue-glow);
+}
