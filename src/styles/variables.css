@@ -1,0 +1,66 @@
+:root {
+  /* ── Couleurs ── */
+  --color-bg:           #08090e;
+  --color-bg-alt:       #0c0f1a;
+  --color-surface:      #0f1623;
+  --color-surface-2:    #141d2e;
+  --color-border:       #1e2d4a;
+  --color-border-light: #263552;
+
+  --color-blue-dark:    #0f4c8a;
+  --color-blue:         #1a7fd4;
+  --color-blue-mid:     #2193e8;
+  --color-blue-light:   #29b6f6;
+  --color-blue-glow:    rgba(26, 127, 212, 0.18);
+  --color-blue-glow-lg: rgba(26, 127, 212, 0.32);
+
+  --color-text:         #e8edf8;
+  --color-text-muted:   #7a8aaa;
+  --color-text-faint:   #3d4f6e;
+
+  --color-success:      #22c55e;
+  --color-danger:       #ef4444;
+  --color-badge:        #f97316;
+
+  /* ── Typographie ── */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* ── Espacements ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ── Radius ── */
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+  --radius-full: 9999px;
+
+  /* ── Ombres ── */
+  --shadow-sm:   0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md:   0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg:   0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-blue: 0 8px 32px rgba(26, 127, 212, 0.28);
+  --shadow-blue-lg: 0 16px 60px rgba(26, 127, 212, 0.35);
+
+  /* ── Transitions ── */
+  --transition-fast:   150ms ease;
+  --transition-normal: 260ms ease;
+  --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Layout ── */
+  --container-max: 1280px;
+  --header-height: 64px;
+  --topbar-height: 40px;
+}

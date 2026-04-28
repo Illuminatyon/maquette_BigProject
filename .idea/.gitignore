@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+build/
+
+# Vite
+.vite/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint / cache
+.eslintcache
+
+# IDEs / editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# npm
+.npm/
+
+# Optional: local certificates
+*.pem
+*.key
+*.crt
