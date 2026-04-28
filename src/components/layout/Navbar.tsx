@@ -28,7 +28,10 @@ export function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <img src="/logo.png" alt="B-Project" className="navbar__logo-img" />
+          <div className="navbar__logo-icon">
+            <span className="navbar__logo-b">B</span>
+          </div>
+          <span className="navbar__logo-text">B-Project</span>
         </Link>
 
         {/* Nav links (desktop) */}

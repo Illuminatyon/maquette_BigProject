@@ -27,12 +27,39 @@
   max-width: 480px;
 }
 
-.about-hero__logo-img {
-  width: 100%;
-  max-width: 420px;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 40px rgba(26, 127, 212, 0.4));
-  animation: glowPulse 3s ease-in-out infinite;
+/* ── Visual blocks (B-Project logo style) ── */
+.about-hero__visual {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.about-hero__blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(2, 90px);
+  gap: 10px;
+  transform: rotate(-4deg);
+}
+
+.about-hero__block {
+  border-radius: var(--radius-lg);
+  opacity: 0.85;
+  transition: transform var(--transition-slow);
+}
+.about-hero__block:nth-child(1) { transform: translate(0, 0); }
+.about-hero__block:nth-child(2) { transform: translate(0, -8px); }
+.about-hero__block:nth-child(3) { transform: translate(0, 4px); }
+.about-hero__block:nth-child(4) { transform: translate(0, 8px); }
+.about-hero__block:nth-child(5) { transform: translate(0, -4px); }
+.about-hero__block:nth-child(6) { transform: translate(0, 12px); }
+
+.about-hero__logo-text {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 900; font-style: italic;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
 }
 
 /* ── Values ── */

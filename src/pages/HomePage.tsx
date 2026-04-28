@@ -9,30 +9,30 @@ import './HomePage.css';
 const SLIDES = [
   {
     id: 1,
-    title: 'La collection Signature',
-    subtitle: 'Hoodies oversize, bombers premium, pièces intemporelles. Fabriqué pour durer.',
-    cta: 'Voir les vêtements',
-    ctaLink: '/category/vetements',
-    image: 'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=1400&q=80',
-    accent: 'Nouveauté 2026',
+    title: 'Bienvenue sur B-Project',
+    subtitle: 'Votre boutique en ligne française',
+    cta: 'Découvrir la boutique',
+    ctaLink: '/category/tous',
+    image: 'https://ecombox.fr/prestaco1/modules/ps_imageslider/images/sample-1.jpg',
+    accent: 'Nouveautés 2026',
   },
   {
     id: 2,
-    title: 'Setup. Style. Signature.',
-    subtitle: 'Desk mats, coques iPhone, mugs thermos — votre univers à vos couleurs.',
-    cta: 'Voir les accessoires',
-    ctaLink: '/category/accessoires',
-    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=1400&q=80',
-    accent: 'Tech & Setup',
+    title: 'Faites-vous plaisir',
+    subtitle: "N'attendez plus — livraison rapide et sécurisée",
+    cta: 'Voir les promotions',
+    ctaLink: '/category/tous?filter=promo',
+    image: 'https://ecombox.fr/prestaco1/modules/ps_imageslider/images/sample-2.jpg',
+    accent: 'Offres spéciales',
   },
   {
     id: 3,
-    title: 'Art en édition limitée',
-    subtitle: 'Prints numérotés, sérigraphies uniques — chaque œuvre raconte l\'histoire B-Project.',
-    cta: 'Explorer l\'art',
-    ctaLink: '/category/art',
-    image: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1400&q=80',
-    accent: 'Tirage limité',
+    title: 'Nos promotions',
+    subtitle: 'Jusqu\'à -20% sur une sélection de produits',
+    cta: 'Profiter maintenant',
+    ctaLink: '/category/tous?filter=promo',
+    image: 'https://ecombox.fr/prestaco1/modules/ps_imageslider/images/sample-3.jpg',
+    accent: 'Soldes',
   },
 ];
 
@@ -110,9 +110,9 @@ function HeroSlider() {
 
 function CategoryCards() {
   const cats = [
-    { slug: 'vetements',   label: 'Vêtements',    icon: '🧥', desc: '5 pièces' },
-    { slug: 'accessoires', label: 'Accessoires',   icon: '🎒', desc: '6 produits' },
-    { slug: 'art',         label: 'Art limité',    icon: '🎨', desc: '3 éditions' },
+    { slug: 'vetements',   label: 'Vêtements',    icon: '👕', desc: '2 produits' },
+    { slug: 'accessoires', label: 'Accessoires',   icon: '☕', desc: '3 produits' },
+    { slug: 'art',         label: 'Art',           icon: '🖼️', desc: '3 produits' },
   ];
   return (
     <section className="home-cats container">
@@ -142,8 +142,8 @@ function PromoBanner() {
       <div className="container promo-banner__inner">
         <div className="promo-banner__text">
           <span className="promo-banner__label">Offres limitées</span>
-          <h2 className="promo-banner__title">T-shirt Grid à <span>-17%</span> cette semaine</h2>
-          <p className="promo-banner__sub">Sérigraphie faite main, coton peigné 200g/m². Stock limité — ne ratez pas cette offre.</p>
+          <h2 className="promo-banner__title">Jusqu'à <span>-20%</span> sur nos articles</h2>
+          <p className="promo-banner__sub">Ne manquez pas nos promotions sur une sélection exclusive de produits.</p>
           <Link to="/category/tous?filter=promo">
             <Button>Voir les promotions</Button>
           </Link>

@@ -21,7 +21,12 @@ export function AboutPage() {
             </p>
           </div>
           <div className="about-hero__visual">
-            <img src="/logo.png" alt="B-Project" className="about-hero__logo-img" />
+            <div className="about-hero__blocks">
+              {['#0f4c8a','#1a7fd4','#0a0a0f','#29b6f6','#1255a4','#111827'].map((c, i) => (
+                <div key={i} className="about-hero__block" style={{ background: c }} />
+              ))}
+            </div>
+            <span className="about-hero__logo-text">B-Project</span>
           </div>
         </section>
 
@@ -48,9 +53,9 @@ export function AboutPage() {
         <section className="about-stats">
           {[
             { value: '2 000+', label: 'Clients satisfaits' },
-            { value: '14',     label: 'Produits disponibles' },
+            { value: '8',      label: 'Produits disponibles' },
             { value: '48h',    label: 'Délai de livraison' },
-            { value: '4.8★',   label: 'Note moyenne' },
+            { value: '4.7★',   label: 'Note moyenne' },
           ].map(s => (
             <div key={s.label} className="about-stat">
               <div className="about-stat__value">{s.value}</div>

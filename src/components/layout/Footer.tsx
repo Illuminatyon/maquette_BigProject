@@ -23,7 +23,8 @@ export function Footer() {
           {/* Brand */}
           <div className="footer__col footer__col--brand">
             <div className="footer__logo">
-              <img src="/logo.png" alt="B-Project" className="footer__logo-img" />
+              <div className="footer__logo-icon"><span>B</span></div>
+              <span className="footer__logo-text">B-Project</span>
             </div>
             <p className="footer__desc">
               Votre boutique en ligne française. Des produits soigneusement sélectionnés,

@@ -15,23 +15,23 @@
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Illuminatyon/maquette_BigProject.git",
-    "accountId": "1c305c8a-8e06-40e3-b132-da2707b821f5"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Illuminatyon/maquette_BigProject.git&quot;,
+    &quot;accountId&quot;: &quot;1c305c8a-8e06-40e3-b132-da2707b821f5&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3CzltwZOOrPt436yIODNIeUQ62D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "ts.external.directory.path": "C:\\Users\\fabio\\Desktop\\maquette_artoss\\bproject\\node_modules\\typescript\\lib"
