@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8933de0-0dd3-4798-ae8e-6649de331aa7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +41,8 @@
   "keyToString": {
     "git-widget-placeholder": "master",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "ts.external.directory.path": "C:\\Users\\fabio\\Desktop\\maquette_artoss\\bproject\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="SharedIndexes">
